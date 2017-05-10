@@ -35,11 +35,11 @@ namespace SecretWord.Controllers
         }
         public IActionResult AddWord(string SecretWord)
         {
-            SecretWordModel newWord = new SecretWordModel();
-            newWord.TimeStamp = DateTime.Now;
+            SecretWordModel n = new SecretWordModel();
+            n.TimeStamp = DateTime.Now;
            // newWord.Username = User.Identity.Name;
-            newWord.Word = SecretWord;
-            db.SecretWord.Add(newWord);
+            n.Word = SecretWord;
+            db.SecretWord.Add(n);
             db.SaveChanges();
 
             return Redirect(@"/Home/Words");

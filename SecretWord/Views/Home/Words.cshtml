@@ -2,12 +2,12 @@
 
 <h1 class="center">All Words</h1>
 
-@foreach (var word in Model)
+@foreach (var m in Model)
 {
     <div class="row">
 
-                    <h4 class="panel-title" >@word.Word</h4>
-                    <p class="panel-info">Created on @word.TimeStamp.Month/@word.TimeStamp.Day/@word.TimeStamp.Year</p>
+                    <h4 class="panel-title" >@m.Word</h4>
+                    <p class="panel-info">Created on @m.TimeStamp.Month/@m.TimeStamp.Day/@m.TimeStamp.Year</p>
 
                 </div>
        
