@@ -20,10 +20,10 @@ namespace SecretWord.Controllers
     private readonly ApplicationDbContext db;
     private readonly UserManager<ApplicationUser> user;
 
-        public HomeController(ApplicationDbContext context, UserManager<ApplicationUser> userman)
+        public HomeController(ApplicationDbContext context, UserManager<ApplicationUser> username)
         {
             db = context;
-            user = userman;
+            user = username;
         }
 
         public IActionResult Index()
